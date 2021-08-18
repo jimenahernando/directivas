@@ -1,0 +1,21 @@
+<!-- SLIDER -->
+<input type="range" min="0" max="30" step="1" (input)="cambiarFuente($event)">
+
+<!-- cambio estilos con constantes -->
+<p [ngStyle]="{ 'color': 'red', 'font-size': '10px' }">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto dolore facilis nemo? Quisquam recusandae voluptas impedit dolor suscipit possimus dolorem, nulla esse. Vel quidem dicta ex cupiditate perspiciatis sint.
+</p>
+<!-- Cambio estilos con variables -->
+<p [ngStyle]="{ 'color': color, 'font-size': fontSize }">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium saepe architecto vel velit, reiciendis cupiditate tempore, ratione veniam doloribus suscipit commodi necessitatibus. Corporis alias quidem illum esse provident, animi sequi doloremque, commodi, incidunt ad est dolorum rerum expedita ipsam. Reprehenderit officiis praesentium deserunt quis, unde odit debitis facilis minima ab quae doloremque quam iure. Quidem culpa error qui delectus numquam eveniet aspernatur?</p>
+<hr>
+<input type="number" [(ngModel)]="borderWidth">
+<select [(ngModel)]="borderColor">
+    <option value="" selected>Selecciona un color</option>
+    <option value="blue">AZUL</option>
+    <option value="red">ROJO</option>
+    <option value="green">VERDE</option>
+</select>
+<button (click)="cambiarEstilo()">Cambiar borde</button>
+<p [ngStyle]="estilosParrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni labore suscipit inventore, recusandae id dolores soluta provident porro numquam ut dolore quos rem fugiat velit corrupti nobis amet deleniti. Repellendus numquam sed autem temporibus debitis porro, hic, sint quidem eum recusandae labore minus voluptas rerum, obcaecati deserunt omnis nostrum eius ullam nulla. Molestias, minima recusandae!</p>
+
+<p [ngStyle]="{'background-color' : bgColor}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi pariatur illum unde, fugiat officiis repudiandae ab eligendi est saepe quibusdam non dignissimos! Deleniti eos, eligendi illum quaerat ipsum facere sapiente deserunt obcaecati. Aut, magnam.</p>
