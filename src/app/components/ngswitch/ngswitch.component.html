@@ -6,6 +6,6 @@
 
 <div class="notificaciones">
     <p class="alert" *ngIf="numProductos==1">Tienes un unico producto</p>
-    <p class="warning" *ngIf="numProductos<=5">Tienes un menos de 5 productos</p>
+    <p class="warning" *ngIf="numProductos>1 && numProductos<=5">Tienes un menos de 5 productos</p>
     <p class="success" *ngIf="numProductos>5">Tienes suficiente producto</p>
 </div>
