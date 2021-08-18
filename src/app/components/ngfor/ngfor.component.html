@@ -1,8 +1,12 @@
 <h1>GAME OF THRONES</h1>
 <section class="episodios">
     <h2>Episodios de la primera temporada</h2>
-    <article *ngFor="let episodio of episodios; let i = index;">
+    <!-- <article [ngClass]="{ 'claseImpar': i%2!=0, 'clasePar': i%2==0}" *ngFor="let episodio of episodios; let i = index; let par = even; let impar = odd;"> -->
+
+    <article [ngClass]="{ 'claseImpar': !par, 'clasePar': par, 'primero': primero, 'ultimo': ultimo}" *ngFor="let episodio of episodios; let i = index; let par = even; let impar = odd; let primero = first; let ultimo = last;">
         <h3>{{i+1}}. {{episodio.title}}</h3>
         <p>Director: {{episodio.director}}</p>
+        <!-- <p>PAR: {{par}}</p>
+        <p>IMPAR: {{impar}}</p> -->
     </article>
 </section>
