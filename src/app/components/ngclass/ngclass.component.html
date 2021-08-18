@@ -1,0 +1,8 @@
+<p [ngClass]="'textoRojo fondoRojo'">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex facere maxime dolore doloremque dolor unde quia, quas deleniti beatae. Voluptas, laudantium laboriosam. Vitae doloribus possimus assumenda voluptates. Voluptas, reprehenderit dolorum.</p>
+<hr>
+<p [ngClass]="{ 'fondoRojo' : false, 'fondoAzul': true }">Eveniet veritatis dignissimos molestias quasi omnis officiis error quisquam, consequatur tempore voluptatum id repudiandae labore doloribus quidem sequi modi libero aut, unde quo voluptates suscipit quia repellendus optio? Omnis, cum.</p>
+
+<p [ngClass]="{ 'fondoRojo' : !activo, 'fondoAzul': activo }">Eveniet veritatis dignissimos molestias quasi omnis officiis error quisquam, consequatur tempore voluptatum id repudiandae labore doloribus quidem sequi modi libero aut, unde quo voluptates suscipit quia repellendus optio? Omnis, cum.</p>
+<button (click)="cambiarEstado()">Activar</button>
+<hr>
+<p [ngClass]="['textoRojo','fondoAzul']">Eveniet veritatis dignissimos molestias quasi omnis officiis error quisquam, consequatur tempore voluptatum id repudiandae labore doloribus quidem sequi modi libero aut, unde quo voluptates suscipit quia repellendus optio? Omnis, cum.</p>
