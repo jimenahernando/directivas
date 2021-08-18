@@ -4,8 +4,16 @@
     <p class="success" *ngSwitchDefault>Tienes suficiente producto</p>
 </div>
 
+<!-- RESUELTO CON ngIf  -->
 <div class="notificaciones">
     <p class="alert" *ngIf="numProductos==1">Tienes un unico producto</p>
     <p class="warning" *ngIf="numProductos>1 && numProductos<=5">Tienes un menos de 5 productos</p>
     <p class="success" *ngIf="numProductos>5">Tienes suficiente producto</p>
 </div>
+
+<!-- USO ngStyle con func ternaria -->
+<ul class="departamentos" [ngSwitch]="departamento">
+    <li [ngStyle]="{ 'display' : (trabajador.departamento === departamento) ? 'block' :'none' }" *ngFor="let trabajador of arrTrabajadores">
+        {{trabajador.nombre}} - {{trabajador.departamento}}
+    </li> 
+</ul>
