@@ -10,7 +10,7 @@ export class NgswitchComponent implements OnInit {
   numProductos: number;
 
   constructor() { 
-    this.numProductos = 5;
+    this.numProductos = 6;
   }
 
   ngOnInit(): void {
