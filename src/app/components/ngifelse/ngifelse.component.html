@@ -1,0 +1,17 @@
+<button (click)="onClickBoton()">{{textoBoton}}</button>
+
+<!-- SOLUCION CON NGIF -->
+<!-- <div *ngIf="estado">
+    Este contenido se ve solo si estado es igual a <strong>true</strong>
+</div>
+<div *ngIf="!estado">
+    Este contenido se ve solo si estado es igual a <b>false</b>
+</div> -->
+
+<!-- SOLUCION CON NGIFELSE -->
+<div *ngIf="estado; else elseBlock">
+    Este contenido se ve solo si estado es igual a <strong>true</strong>
+</div>
+<ng-template #elseBlock>
+    <div>Este contenido se ve solo si estado es igual a <b>false</b></div>
+</ng-template>

@@ -8,6 +8,7 @@ import { NgclassComponent } from './components/ngclass/ngclass.component';
 import { NgifComponent } from './components/ngif/ngif.component';
 import { NgforComponent } from './components/ngfor/ngfor.component';
 import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
+import { NgifelseComponent } from './components/ngifelse/ngifelse.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgswitchComponent } from './components/ngswitch/ngswitch.component';
     NgclassComponent,
     NgifComponent,
     NgforComponent,
-    NgswitchComponent
+    NgswitchComponent,
+    NgifelseComponent
   ],
   imports: [
     BrowserModule,
