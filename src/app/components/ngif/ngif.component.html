@@ -1,0 +1,23 @@
+<div class="tabs">
+    <nav>
+        <ul class="menu">
+            <li (click)="cargarSeccion('sobremi')" [ngClass]="{'activo': seccion === 'sobremi'}">Sobre mi</li>
+            <li (click)="cargarSeccion('experiencia')" [ngClass]="{'activo': seccion === 'experiencia'}">Experiencia</li>
+            <li (click)=" cargarSeccion('estudios')" [ngClass]="{'activo': seccion === 'estudios'}">Estudios</li>
+        </ul>
+    </nav>
+    <section>
+        <article *ngIf=" seccion ==='sobremi'">
+            <h3>Sobre mi</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, autem? Sapiente hic, eum nesciunt quo vel non asperiores esse repellat ratione deserunt harum quam dolore sequi modi quod quaerat fugiat!</p>
+        </article>
+        <article *ngIf=" seccion ==='experiencia'">
+            <h3>Experiencia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus saepe nobis obcaecati a tempora odio culpa aliquam cupiditate mollitia tempore facere, accusamus adipisci temporibus magni illo officia nostrum debitis dolorem deleniti, ipsam dolor perferendis inventore reprehenderit! Architecto facere veniam labore, possimus vitae voluptas ratione asperiores neque impedit cum eveniet.</p>
+        </article>
+        <article *ngIf=" seccion ==='estudios'">
+            <h3>Estudios</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nostrum totam fuga eius aspernatur animi cumque dicta autem quod cum. Exercitationem incidunt molestiae eius accusamus. Maxime beatae repellendus eum neque cum impedit sed itaque!</p>
+        </article>
+    </section>
+</div>

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NgstyleComponent } from './components/ngstyle/ngstyle.component';
 import { NgclassComponent } from './components/ngclass/ngclass.component';
 import { NgifComponent } from './components/ngif/ngif.component';
+import { NgforComponent } from './components/ngfor/ngfor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgstyleComponent,
     NgclassComponent,
-    NgifComponent
+    NgifComponent,
+    NgforComponent
   ],
   imports: [
     BrowserModule,

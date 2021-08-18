@@ -1,0 +1,16 @@
+*{
+    color: #2A3949;
+}
+
+h1{
+    text-align: center;
+}
+
+article{
+    border-radius: 0.5rem;
+    border: 0.5px solid grey;
+    box-shadow: 1px 1px 1px grey;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
